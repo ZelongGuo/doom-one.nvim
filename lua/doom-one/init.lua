@@ -128,7 +128,9 @@ doom_one.set_colorscheme = function()
 	set_hl("Conceal", { fg = palette.grey })
 	set_hl("SpecialKey", { fg = palette.violet, bold = true })
 	set_hl("NonText", { fg = palette.fg_alt, bold = true })
-	set_hl("MatchParen", { fg = palette.red, bold = true })
+	-- set_hl("MatchParen", { fg = palette.red, bold = true })
+  -- Change for a better parentheses match
+  set_hl("MatchParen", { fg = palette.red, bg = palette.dark_cyan, bold = true, underline = true })
 	set_hl("Whitespace", { fg = palette.grey })
 
 	set_hl("Highlight", { bg = palette.bg_alt })
